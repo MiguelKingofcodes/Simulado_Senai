@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './cadastroLogin.css'
 import userIcon from './assets/usuario2.png'
 
-function CadastroLogin() {
+function CadastroLogin(props) {
 
   return (
     <div className="body">

@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './cadastroUsuario.css'
 import userIcon from './assets/usuario2.png'
 
-function CadastroUsuario() {
+function CadastroUsuario(props) {
 
   return (
     <div className="body">
@@ -25,6 +25,7 @@ function CadastroUsuario() {
 
             <div className="entrar">
                 <input type="submit" placeholder='Entrar' />
+                <p>Ainda não tem um login? <a onClick={() => props.changePage("NovoLogin")}>Crie um.</a></p>
             </div>
 
         </div>

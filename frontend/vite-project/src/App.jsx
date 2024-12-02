@@ -14,7 +14,7 @@ function App() {
       {
 
         pagina === "Login" && (
-          <CadastroUsuario ></CadastroUsuario>
+          <CadastroUsuario changePage={setPagina} ></CadastroUsuario>
         )
 
       }
@@ -22,7 +22,7 @@ function App() {
       {
 
       pagina === "NovoLogin" && (
-        <CadastroLogin></CadastroLogin>
+        <CadastroLogin changePage={setPagina} ></CadastroLogin>
       )
 
       }
