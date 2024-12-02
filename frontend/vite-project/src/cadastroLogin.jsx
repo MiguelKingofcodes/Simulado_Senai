@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './cadastroUsuario.css'
+import './cadastroLogin.css'
 import userIcon from './assets/usuario2.png'
 
-function CadastroUsuario() {
+function CadastroLogin() {
 
   return (
     <div className="body">
@@ -13,7 +13,8 @@ function CadastroUsuario() {
     <div className="login">
         <div className="caixa">
         <img src={userIcon}></img>
-            <h1>Login</h1>
+            <h1>Cadastre um novo Login</h1>
+            <p>Preencha os campos abaixo</p>
 
             <div className="email">
                 <input type="email" placeholder='E-mail' />
@@ -24,7 +25,7 @@ function CadastroUsuario() {
             </div>
 
             <div className="entrar">
-                <input type="submit" placeholder='Entrar' />
+                <input type="submit" placeholder='Cadastrar' />
             </div>
 
         </div>
@@ -33,4 +34,4 @@ function CadastroUsuario() {
   )
 }
 
-export default CadastroUsuario
+export default CadastroLogin
